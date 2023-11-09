@@ -1,9 +1,16 @@
+import { cn } from '@/libs/utils'
+
 interface TituloProps {
     titulo: string
+    className?: string
 }
 
-const Titulo = ({ titulo }: TituloProps) => {
-    return <h1 className="my-4 md:my-8 text-3xl font-light text-principalDark tracking-wide">{titulo}</h1>
+const Titulo = ({ titulo, className }: TituloProps) => {
+    return (
+        <h1 className={cn('text-3xl font-light text-principalDark tracking-wide', className)}>
+            {titulo}
+        </h1>
+    )
 }
 
 export default Titulo
