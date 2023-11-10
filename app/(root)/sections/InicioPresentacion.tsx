@@ -7,7 +7,7 @@ const InicioPresentacion = () => {
     return (
         <ContainerSection>
             <Container>
-                <header className=" flex justify-between items-start">
+                <header className="flex justify-between items-start">
                     <img
                         className="w-24 aspect-square object-cover rounded"
                         src={informacionInicio.fotoPerfil}
