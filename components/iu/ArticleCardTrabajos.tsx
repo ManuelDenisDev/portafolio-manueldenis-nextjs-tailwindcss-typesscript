@@ -2,12 +2,12 @@ import CardTrabajos from './CardTrabajos'
 
 const ArticleCardTrabajos = () => {
     return (
-        <article className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-10">
+        <article className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8">
             <CardTrabajos
                 href="/trabajos/detalles"
                 imagen="https://framerusercontent.com/images/isuy4zvThkzCNgjg9FrXesN4DJA.webp"
                 categoria="Landing Page"
-                titulo="Peña Real Madrid algeciras"
+                titulo="Peña Real Madrid Algeciras"
             />
             <CardTrabajos
                 href="/trabajos-02"

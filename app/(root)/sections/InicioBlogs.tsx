@@ -15,7 +15,7 @@ const InicioBlogs = () => {
         <ContainerSection>
             <Container>
                 <Titulo titulo="Blogs" />
-                <article className="space-y-8 my-8">
+                <article className="space-y-8">
                     <CardBlogs
                         href="/blogs/blog-01"
                         imagen="https://framerusercontent.com/images/b5BAXAQCSX9uo7JqPHBYYsrzQ.jpg?scale-down-to=512"

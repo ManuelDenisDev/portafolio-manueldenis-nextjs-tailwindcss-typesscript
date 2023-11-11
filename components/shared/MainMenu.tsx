@@ -1,4 +1,6 @@
+import { cn } from '@/libs/utils'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 import {
     VscHome,
@@ -49,6 +51,8 @@ const MainMenu = () => {
         },
     ]
 
+    const pathname = usePathname()
+
     return (
         <ul>
             <li>
@@ -56,7 +60,10 @@ const MainMenu = () => {
                     <Link
                         key={route.href}
                         href={route.href}
-                        className="flex items-center gap-3 py-5 px-8 border-b border-principalDark/10 hover:bg-secundarioDark/5 hover:text-principalDark transition-colors duration-300">
+                        className={cn(
+                            'flex items-center gap-3 py-5 px-8 border-b border-principalDark/10 hover:bg-secundarioDark/5 hover:text-principalDark transition-colors duration-300',
+                            pathname === route.href && 'text-principalDark'
+                        )}>
                         <route.icon size={20} />
                         <span className="tracking-wide">{route.label}</span>
                     </Link>

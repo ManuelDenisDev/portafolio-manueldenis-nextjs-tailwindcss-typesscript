@@ -1,24 +1,41 @@
 import Image from 'next/image'
-import Facebook from '../../public/images/facebook.svg'
-import Disney from '../../public/images/disney.svg'
-import Airbnb from '../../public/images/airbnb.svg'
-import Apple from '../../public/images/apple.svg'
-import Spark from '../../public/images/spark.svg'
-import Samsung from '../../public/images/samsung.svg'
-import Quora from '../../public/images/quora.svg'
-import Sass from '../../public/images/sass.svg'
 import ContainerSection from './ContainerSection'
+import Node from '@/public/images/logos/node-js.svg'
+import VisualStudio from '@/public/images/logos/visualstudiocode.svg'
+import Git from '@/public/images/logos/git.svg'
+import Github from '@/public/images/logos/github.svg'
+import NextJs from '@/public/images/logos/nextjs.svg'
+import Html5 from '@/public/images/logos/html5.svg'
+import CSS3 from '@/public/images/logos/css3.svg'
+import JavaScript from '@/public/images/logos/javascript.svg'
+import Sass from '@/public/images/logos/sass.svg'
+import Bootstrap from '@/public/images/logos/bootstrap.svg'
+import ReactLogo from '@/public/images/logos/react.svg'
+import Tailwind from '@/public/images/logos/tailwindcss.svg'
+import TypeScriptLogo from '@/public/images/logos/typescript.svg'
+import Wordpress from '@/public/images/logos/wordpress.svg'
+import WooCommerce from '@/public/images/logos/woo-commerce.svg'
+
+
 
 export default function LogoCarousel() {
     const logos = [
-        { src: Facebook, alt: 'Facebook' },
-        { src: Disney, alt: 'Disney' },
-        { src: Airbnb, alt: 'Airbnb' },
-        { src: Apple, alt: 'Apple' },
-        { src: Spark, alt: 'Spark' },
-        { src: Samsung, alt: 'Samsung' },
-        { src: Quora, alt: 'Quora' },
+        { src: Node, alt: 'Node Js' },
+        { src: VisualStudio, alt: 'Visual Studio Code' },
+        { src: Git, alt: 'Git' },
+        { src: Github, alt: 'Github' },
+        { src: NextJs, alt: 'Next Js' },
+        { src: Html5, alt: 'HTML 5' },
+        { src: CSS3, alt: 'CSS 3' },
+        { src: JavaScript, alt: 'JavaScript' },
         { src: Sass, alt: 'Sass' },
+        { src: Bootstrap, alt: 'Bootstrap' },
+        { src: ReactLogo, alt: 'React' },
+        { src: Tailwind, alt: 'Tailwind Css' },
+        { src: TypeScriptLogo, alt: 'TypeScript' },
+        { src: Wordpress, alt: 'Wordpress' },
+        { src: WooCommerce, alt: 'WooCommerce' },
+
     ]
 
     return (

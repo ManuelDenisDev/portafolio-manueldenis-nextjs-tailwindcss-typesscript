@@ -20,15 +20,15 @@ const InicioPresentacion = () => {
                         </span>
                     </div>
                 </header>
-                <article className="mt-8 max-w-3xl">
+                <article className="space-y-4 max-w-3xl">
                     <h2 className="text-3xl font-light text-principalDark tracking-wide">
                         {informacionInicio.titulo}
                     </h2>
-                    <p className="mt-4 text-base font-extralight tracking-wide">
+                    <p className="text-base font-extralight tracking-wide">
                         {informacionInicio.descripcion}
                     </p>
                 </article>
-                <footer className="my-8 flex gap-4">
+                <footer className="flex gap-4">
                     {informacionInicio.socialMedia.map((social) => (
                         <ButtonSocialMedia
                             key={social.href}
