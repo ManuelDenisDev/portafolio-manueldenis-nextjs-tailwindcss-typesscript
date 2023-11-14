@@ -15,7 +15,10 @@ import Tailwind from '@/public/images/logos/tailwindcss.svg'
 import TypeScriptLogo from '@/public/images/logos/typescript.svg'
 import Wordpress from '@/public/images/logos/wordpress.svg'
 import WooCommerce from '@/public/images/logos/woo-commerce.svg'
-
+import Figma from '@/public/images/logos/figma.svg'
+import AdobeXd from '@/public/images/logos/adobe-xd.svg'
+import AdobeIllustrator from '@/public/images/logos/adobe-illustrator.svg'
+import AdobePhotoshop from '@/public/images/logos/adobe-photoshop.svg'
 
 
 export default function LogoCarousel() {
@@ -35,6 +38,11 @@ export default function LogoCarousel() {
         { src: TypeScriptLogo, alt: 'TypeScript' },
         { src: Wordpress, alt: 'Wordpress' },
         { src: WooCommerce, alt: 'WooCommerce' },
+        { src: Figma, alt: 'Figma' },
+        { src: AdobeXd, alt: 'Adobe Xd' },
+        { src: AdobeIllustrator, alt: 'Adobe Illustrator' },
+        { src: AdobePhotoshop, alt: 'Adobe Photoshop' },
+
 
     ]
 

@@ -17,7 +17,7 @@ const config: Config = {
                 'foto-perfil': "url('/images/asset-7.jpeg)",
             },
             animation: {
-                'infinite-scroll': 'infinite-scroll 25s linear infinite',
+                'infinite-scroll': 'infinite-scroll 45s linear infinite',
             },
             keyframes: {
                 'infinite-scroll': {

@@ -1,19 +1,19 @@
 'use client'
 
+import { cn } from '@/libs/utils'
 import Image from 'next/image'
-import Button from './Button'
 
 interface CardServiciosProps {
+    className?: string
     href: string
     imagen: string
     titulo: string
     descripcion: string
-    precio: string
 }
 
-const CardServicios = ({ href, imagen, titulo, descripcion, precio }: CardServiciosProps) => {
+const CardServicios = ({ className, href, imagen, titulo, descripcion }: CardServiciosProps) => {
     return (
-        <a href={href} className="flex flex-col gap-8 group py-4">
+        <a href={href} className={cn('flex flex-col gap-8 group py-4', className)}>
             <figure className="relative w-14 h-14 rounded">
                 <Image src={imagen} alt={'Foto del servicio' + titulo} fill />
             </figure>
@@ -22,7 +22,6 @@ const CardServicios = ({ href, imagen, titulo, descripcion, precio }: CardServic
                     {titulo}
                 </h3>
                 <p>{descripcion}</p>
-                {/* <Button type="button" label={precio} onClick={() => router.push('/trabajos')} /> */}
             </figcaption>
         </a>
     )

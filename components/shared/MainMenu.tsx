@@ -25,9 +25,9 @@ const MainMenu = () => {
             href: '/trabajos',
         },
         {
-            label: 'Tecnologias',
+            label: 'Habilidades',
             icon: VscServer,
-            href: '/tecnologias',
+            href: '/habilidades',
         },
         {
             label: 'Servicios',
