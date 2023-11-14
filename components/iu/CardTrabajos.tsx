@@ -15,7 +15,8 @@ const CardTrabajos = ({ href, imagen, categoria, titulo }: CardTrabajosProps) =>
                 <Image
                     src={imagen}
                     alt={titulo}
-                    fill
+                    sizes='w-auto object-center'
+                    priority={true}
                     className="absolute object-cover rounded group-hover:scale-110 transition-all duration-300"
                 />
             </div>
