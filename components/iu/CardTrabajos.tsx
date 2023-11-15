@@ -1,9 +1,9 @@
 import Link from 'next/link'
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 
 interface CardTrabajosProps {
     href: string
-    imagen: string
+    imagen: StaticImageData
     categoria: string
     titulo: string
 }
@@ -15,7 +15,7 @@ const CardTrabajos = ({ href, imagen, categoria, titulo }: CardTrabajosProps) =>
                 <Image
                     src={imagen}
                     alt={titulo}
-                    sizes='w-auto object-center'
+                    sizes="w-auto object-center"
                     priority={true}
                     className="absolute object-cover rounded group-hover:scale-110 transition-all duration-300"
                 />
