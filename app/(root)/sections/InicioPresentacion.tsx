@@ -2,15 +2,18 @@ import { informacionInicio } from '@/assets/data'
 import ButtonSocialMedia from '@/components/iu/ButtonSocialMedia'
 import Container from '@/components/iu/Container'
 import ContainerSection from '@/components/iu/ContainerSection'
+import Image from 'next/image'
 
 const InicioPresentacion = () => {
     return (
         <ContainerSection>
             <Container>
                 <header className="flex justify-between items-start">
-                    <img
+                    <Image
                         className="w-24 aspect-square object-cover rounded"
                         src={informacionInicio.fotoPerfil}
+                        width={240}
+                        height={240}
                         alt="Foto Perfil"
                     />
                     <div className="flex justify-center items-center gap-2 bg-green-950/50 px-4 py-2 rounded h-10">
